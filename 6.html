@@ -7,30 +7,19 @@
 <meta name="Keywords" content="Learn, counting, Stephen, kids, learning, score, cartoon, cat, movie for kids, school, website, for kids, knowledge for kids, kindergarten, numbers, funny cat."> 
 <style>
 body {background: #003301;
-    padding: 1px;
-    font-family: Arial;}
+padding: 1px;
+font-family: Arial;}
 div > div {
 width: 700px;
 height: 200px;
 padding: 50px;}
-#div1 {
-    width: 185px;
-    height:240px;
-    padding: 50px;
-    border: px solid #aaaaaa;
-	background: url(kor451.jpg); }
-#div2 {
-    width: 185px;
-    height: 240px;
-    padding: 50px;
-    border: px solid #aaaaaa;
-	background: url(kor451.jpg); }
-#div3 {
-    width: 185px;
-    height: 240px;
-    padding: 50px;
-    border: px solid #aaaaaa;
-	background: url(kor451.jpg); }
+#div1,#div2,#div3 {
+width: 185px;
+height: 240px;
+padding: 50px;
+border: px solid #aaaaaa;
+background-image: url(kor451.jpg); 
+background-repeat: no-repeat; }
 .btn{border:none;
 color:white;
 padding:10px 28px;
@@ -38,28 +27,7 @@ font-size:16px;
 cursor:pointer;
 border-radius: 6px;
 margin: 4px 5px;}
-.m{background-color:#660000;}
-.m:hover{background-color:#FF3333;}
-.btn{border:none;
-color:white;
-padding:10px 28px;
-font-size:16px;
-cursor:pointer;
-border-radius: 6px;
-margin: 4px 5px;}
-.success{background-color:#DC143C;}
-.success:hover{background-color:#48D1CC;}
-.info{background-color:#FF8C00;}
-.info:hover{background-color:#48D1CC;}
-.warning{background-color:#FA8072;}
-.warning:hover{background-color:#48D1CC;}
-.danger{background-color:#00FF7F;}
-.danger:hover{background-color:#48D1CC;}
-.default{background-color:#FFA500;}
-.default:hover{background-color:#48D1CC;}
-.a{background-color:#B22222;}
-.a:hover{background-color:#48D1CC;}
- #box4 {
+#box4 {
 padding: 0px;
 text-align: center;
 width: 10px;
@@ -69,41 +37,43 @@ height:5px;
 -webkit-transition: all 2s ease-out;
 cursor: pointer;}
 #box4:hover {
--webkit-transform: scale(2.8);
--moz-transform: scale(2.8);
--o-transform: scale(2.8);}
-@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} }
-@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} }
-@media screen and (max-width: 992px) { div. contentblock {width: 970px;} }
- </style>
+-webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-o-transform: scale(1.5);}
+.text_show{
+color: white;
+font-size: 2rem;
+height: 2rem;
+text-align:center;
+}
+.down{
+height: 3rem;
+}
+#img{
+width: 16rem;
+padding-left: 3rem;
+}
+#tab1{
+width: 100%;
+}
+h2{
+color: #d40736;
+}
+</style>
 </head>
-<LEFT><table>
-<tr><td width="210"><div id="box4"><img src="ar9.6.jpg"  width="210" height="90" align="center"></div></td>
-<td width="710"><i><font size="5" color="#FF3333"><b><i> &nbsp &nbsp &nbsp &nbsp &nbsp HELP ARINA TO COLLECT APPLES IN THE BASKETS<i/></td>
-<td width="210" ></td></tr>
-<tr><td width="380"></td>
-<td width="500"> <font size="4" color="#FF3333"><b><i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspCOUNT ALL THE APPLES IN THE BASKETS<i/> </td>  
-<tr><td height="35" align="center">  </td></tr>
-<tr><td>       </td></tr>
+<table id="tab1">
+<tr><td td ><div id="box4"><img src="ar9.6.jpg"  id="img" align="center"></div></td>
+<td align="center" ><h2>HELP ARINA TO COLLECT APPLES IN THE BASKETS    </h2>   </td></tr>
+<tr><td  align="center" ></td><td align="center" ><h2>ALL THE APPLES IN THE BASKETS    </h2> </td></tr>
 </table>
-</LEFT>
-<script>
-function allowDrop(ev) {
-    ev.preventDefault();}
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);}
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));}
-</script>
-<CENTER><table><tr>
-<td><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
-<td><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
-<td><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
-<td rowspan="2"><body><CENTER><video autoplay controls width="500" height="">
-<source src="https://site50.github.io/arinaQ.mp4"></video></CENTER></td></tr>
-<table><tr><td><div class="down">
+<CENTER>
+<table id="tab1"><tr>
+<td valign="middle"  align="center"><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
+<td valign="middle"  align="center"><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
+<td valign="middle"  align="center"><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
+</tr></table>
+<table><tr><td valign="middle"  align="center">
+<div class="down" id="myForm">
 <img id="drag1" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center">
 <img id="drag2" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center">
 <img id="drag3" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center">
@@ -116,26 +86,16 @@ function drop(ev) {
 <img id="drag10" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center">
 <img id="drag11" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center">
 <img id="drag12" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center">
-<script>
-	$(document).ready(function(){
-	var down = 0;
-	$(".down").mousedown(function(){
-	down++;
-    $(".down span").text( + down);});});
-</script>
-</head>
-<CENTER><font size="6" color="#003301">
-<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
-<span> </span></p></div>
-<p id="myP" " onmousedown="mouseDown()" onmouseup="mouseUp()">
-<button class="btn m"><i>CHECK YOUR ANSWERТ</i></button></p>
-<script>
-function mouseUp() {
-document.getElementById("myP").style.color = "white";}
-</script></td><td width="490">
- </td>  </tr></table></CENTER>
+</div>
+<div class="text_show" ></div>
+<div>
+<button class="btn m" id="myP"  ><i>CHECK YOUR ANSWERТ</i></button>
+</div>
+</td>
+</tr>
+</table>
 <CENTER>
-<table  border="1">
+<table  border="1" >
 <tr><td>
 <a href="https://site50.github.io/1.html">
 <button class="btn success">Home</button>
@@ -160,6 +120,29 @@ document.getElementById("myP").style.color = "white";}
 <a href="https://site50.github.io/6.html">
 <button class="btn a">Collect apples</button>
 </td></tr></table></CENTER>
-<CENTER><table><td><tr><font size="4" color="#FFF5EE"><i>dollorabel@gmail.com</i></td></tr></table></CENTER>
+<CENTER><table><td><tr><font size="4" color="#FFF5EE"><i>sitebogd15@gmail.com</i></td></tr></table></CENTER>
+<script>
+function allowDrop(ev) {
+ev.preventDefault();}
+function drag(ev) {
+ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+ev.preventDefault();
+var data = ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data));
+console.log(data);
+}
+$(document).ready(function(){
+var down = 0;
+$(".down").mousedown(function(){
+$(".text_show").text('');
+down++;
+$("#myP").click(function(){
+$(".text_show").text(+ down);
+})
+});
+});
+</script>
 </body>
 </html>
